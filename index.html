@@ -1,42 +1,54 @@
-<html>
+<!DOCTYPE html>
+<html lang="kr">
 <head>
+  <meta charset="utf-8"/>
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.deep_purple-red.min.css" />
   <script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script>
 
   <link rel="stylesheet" href="build/majac.css">
+  <link rel="stylesheet" href="style.css">
 
-<style>
-.demo-layout-transparent {
-  background: url('https://getmdl.io/assets/demos/transparent.jpg') center / cover;
-}
-.demo-layout-transparent .mdl-layout__header,
-.demo-layout-transparent .mdl-layout__drawer-button {
-  /* This background is dark, so we set text to white. Use 87% black instead if
-     your background is light. */
-  color: white;
-}
-</style>
 </head>
 <body>
-  <!-- Uses a transparent header that draws on top of the layout's background -->
-  <div class="demo-layout-transparent mdl-layout mdl-js-layout">
-    <header class="mdl-layout__header mdl-layout__header--transparent">
-      <div class="mdl-layout__header-row">
-        <!-- Title -->
-        <span class="mdl-layout-title">Title</span>
-        <!-- Add spacer, to align navigation to the right -->
-        <div class="mdl-layout-spacer"></div>
-        <!-- Navigation -->
-        <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
-        </nav>
-      </div>
-    </header>
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">MAJAC CSS</span>
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout__title">MAJAC CSS</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="#">Hello</a>
+      <a class="mdl-navigation__link" href="#">World.</a>
+      <a class="mdl-navigation__link" href="#">How</a>
+      <a class="mdl-navigation__link" href="#">Are</a>
+      <a class="mdl-navigation__link" href="#">You?</a>
+    </nav>
   </div>
+  <main class="mdl-layout__content">
+    <div class="mdl-grid">
+      <div class="mdl-cell mdl-cell--12-col">
+        <h1 class="h1">작업중입니다.</h1>
+      </div>
+      <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet">1</div>
+      <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet">2</div>
+      <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet">3</div>
+    </div>
+  </main>
+</div>
+
 </body>
 </html>
