@@ -1,0 +1,60 @@
+/*
+how to use
+
+.YourClass {
+	@include border-radius(10px);
+}
+*/
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+		 -moz-border-radius: $radius;
+			-ms-border-radius: $radius;
+					border-radius: $radius;
+}
+
+@mixin box-shadow($shadow...) {
+	-webkit-box-shadow: $shadow;
+	-moz-box-shadow: $shadow;
+	-ms-box-shadow: $shadow;
+	box-shadow: $shadow;
+}
+
+@mixin bg-set($size, $position) {
+	background-size: $size;
+	background-repeat: no-repeat;
+	background-position: $position;
+}
+
+@mixin transform($option) {
+	-webkit-transform	: $option;
+	-moz-transform   	: $option;
+	-o-transform     	: $option;
+	-ms-transform    	: $option;
+	transform 			 	: $option;
+}
+
+@mixin transform-origin($option) {
+	-webkit-transform-origin : $option;
+	-moz-transform-origin    : $option;
+	-o-transform-origin      : $option;
+	-ms-transform-origin     : $option;
+	transform-origin 			 	 : $option;
+}
+
+
+@mixin transition($css, $sec) {
+	-webkit-transition: $css $sec;
+	-moz-transition   : $css $sec;
+	-o-transition     : $css $sec;
+	-ms-transition    : $css $sec;
+	transition: $css $sec;
+}
+
+@mixin multiTransition($options...) {
+	-webkit-transition: $options;
+	-moz-transition   : $options;
+	-o-transition     : $options;
+	-ms-transition    : $options;
+	transition: $options;
+}

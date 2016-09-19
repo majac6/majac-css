@@ -1,0 +1,22 @@
+@import 'custom_scss/var';
+// _var.scss for Customize SCSS File.
+
+@import 'source/var';
+@import 'source/default';
+@import 'source/layout';
+@import 'source/mixin';
+@import 'source/typo';
+
+html {
+  font-size: $defaultFontSize;
+  // set Default Font size
+}
+
+@media (max-width: $mobileMaxWidth) {
+
+html {
+  font-size: $defaultFontSize-m;
+  // set Default Font size
+}
+
+}

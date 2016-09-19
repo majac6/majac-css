@@ -1,0 +1,41 @@
+@for $i from 1 through 6 {
+	.h#{$i} {
+		font-size: 3.5rem - (0.3 * $i);
+	}
+}
+
+@each $item, $i in $textsize {
+  .textsize-#{$item} {
+    font-size: #{$i};
+  }
+}
+
+// End Text Size
+
+@each $item, $i in $textAlign {
+  .textAlign-#{$item},
+  .text-#{$item} {
+    text-align: #{$i};
+  }
+}
+
+// End Text Align
+
+@each $item, $i in $textColorArray {
+  .text-#{$item} {
+    color: #{$i};
+  }
+}
+
+@media (max-width: $mobileMaxWidth) {
+
+@each $item, $i in $textAlign {
+  .textAlign-#{$item}-m,
+  .text-#{$item}-m {
+    text-align: #{$i};
+  }
+}
+
+// End Mobile Text Align
+
+}
