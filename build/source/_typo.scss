@@ -27,15 +27,25 @@
   }
 }
 
-@media (max-width: $mobileMaxWidth) {
-
-@each $item, $i in $textAlign {
-  .textAlign-#{$item}-m,
-  .text-#{$item}-m {
-    text-align: #{$i};
+@each $item, $i in $letterspace {
+  .textletter-#{$item} {
+    letter-spacing: #{$i};
   }
 }
 
-// End Mobile Text Align
+.whiteSpace-nowrap {
+  white-space: nowrap;
+}
+
+@media (max-width: $mobileMaxWidth) {
+
+  @each $item, $i in $textAlign {
+    .textAlign-#{$item}-m,
+    .text-#{$item}-m {
+      text-align: #{$i};
+    }
+  }
+
+  // End Mobile Text Align
 
 }

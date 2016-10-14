@@ -1,5 +1,12 @@
 @for $i from 0 through 100 {
 
+  .maxWidth-#{$i}p {
+    max-width: percentage($i * 0.01);
+  }
+  .maxHeight-#{$i}p {
+    max-height: percentage($i * 0.01);
+  }
+
   .padding-top-#{$i} {
     padding-top: #{$i}px;
   }
@@ -13,12 +20,49 @@
     padding-bottom: #{$i}px;
   }
 
+  .padding-top-#{$i}p {
+    @if $i > 0 {
+      padding-top: percentage($i * 0.01);
+    }
+    
+  }
+  .padding-left-#{$i}p {
+    @if $i > 0 {
+      padding-left: percentage($i * 0.01);
+    }
+    
+  }
+  .padding-right-#{$i}p {
+    @if $i > 0 {
+      padding-right: percentage($i * 0.01);
+    }
+    
+  }
+  .padding-bottom-#{$i}p {
+    @if $i > 0 {
+      padding-bottom: percentage($i * 0.01);
+    }
+    
+  }
+
   .padding-w-#{$i} {
     padding: 0 #{$i}px;
   }
   .padding-h-#{$i} {
     padding: #{$i}px 0;
   }
+
+  .padding-w-#{$i}p {
+    @if $i > 0 {
+      padding: 0 percentage(($i * 0.01));  
+    }
+  }
+  .padding-h-#{$i}p {
+    @if $i > 0 {
+      padding: percentage(($i * 0.01)) 0;
+    }
+  }
+
   .padding-#{$i} {
     padding: #{$i}px #{$i}px;
   }
