@@ -1,8 +1,8 @@
 {
   "name": "majac-css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CSS For fast build WEB",
-  "main": "build/majac.css",
+  "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,7 +15,7 @@
     "css",
     "css3"
   ],
-  "author": "",
+  "author": "majac",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/majac6/majac-css/issues"
