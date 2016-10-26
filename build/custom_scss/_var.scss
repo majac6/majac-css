@@ -26,4 +26,10 @@ $letterspace: (
   'lg': '0.03rem',
 );
 
+$breakpoints: (
+  'sm'  : 767px,
+  'md' : 992px,
+  'lg'  : 1200px,
+) !default;
+
 // Font And Text

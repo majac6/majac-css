@@ -4,6 +4,18 @@
 	}
 }
 
+@for $i from 0 through 100 {
+
+  .textIndent-#{$i}p {
+    text-indent: percentage($i * 0.01);
+  }
+
+  .textIndent-#{$i} {
+    text-indent: #{$i}px;
+  }
+
+}
+
 @each $item, $i in $textsize {
   .textsize-#{$item} {
     font-size: #{$i};
@@ -35,6 +47,12 @@
 
 .whiteSpace-nowrap {
   white-space: nowrap;
+}
+
+.text-cut {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 @media (max-width: $mobileMaxWidth) {
