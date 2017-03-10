@@ -1,10 +1,11 @@
+@charset 'utf-8';
+
 @import 'custom_scss/var';
 // _var.scss for Customize SCSS File.
-
 @import 'source/var';
-@import 'source/default';
-@import 'source/layout';
 @import 'source/mixin';
+
+@import 'source/layout';
 @import 'source/typo';
 
 html {
@@ -13,10 +14,15 @@ html {
 }
 
 @media (max-width: $mobileMaxWidth) {
-
-html {
-  font-size: $defaultFontSize-m;
-  // set Default Font size
+  html {
+    font-size: $defaultFontSize-Tablet;
+    // set Default Font size
+  }
 }
 
+@media (max-width: 321px) {
+  html {
+    font-size: $defaultFontSize-Mobile;
+    // set Default Font size
+  }
 }
