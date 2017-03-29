@@ -5,8 +5,8 @@ SCSS 파일을 활용했을 때 최대한 기능을 활용할 수 있도록 제�
 
 <h1>다운로드 및 필수사항 - How to get And Requirements</h1>
 <p>
-  - NPM : npm install majac-css
-  - Git : https://github.com/majac6/majac-css
+  - NPM : npm install majac-css<br/>
+  - Git : https://github.com/majac6/majac-css<br/>
 </p>
 <!-- 
 <h1>사용법 - How to use</h1>
@@ -24,6 +24,6 @@ SCSS 파일을 활용했을 때 최대한 기능을 활용할 수 있도록 제�
 
 <h2>1.0.2</h2>
 <p>
-  - package.json 수정 (키워드 추가 및 잘못된 사항 수정)
-  - @mixin border-box 추가
+  - package.json 수정 (키워드 추가 및 잘못된 사항 수정)<br/>
+  - @mixin border-box 추가<br/>
 </p>
