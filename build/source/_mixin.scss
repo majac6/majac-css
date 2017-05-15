@@ -78,28 +78,32 @@ how to use
   display: flex;
 }
 
-@mixin media-min($breakpoint) {
-  @if map-has-key($breakpoints, $breakpoint) {
-    @media (min-width: map-get($breakpoints, $breakpoint)) {
-      @content;
-    }
-  }
+// @mixin mobile {
+//   @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+//     @content;
+//   }
+// }
 
-  @else {
-    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
-        + "Please make sure it is defined in `$breakpoints` map.";
+@mixin mobile {
+  @media (max-width: #{$pc-width - 1px}) {
+    @content;
   }
 }
 
-@mixin media-max($breakpoint) {
-  @if map-has-key($breakpoints, $breakpoint) {
-    @media (max-width: map-get($breakpoints, $breakpoint)) {
-      @content;
-    }
-  }
-
-  @else {
-    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
-        + "Please make sure it is defined in `$breakpoints` map.";
+@mixin pc {
+  @media (min-width: #{$pc-width}) {
+    @content;
   }
 }
+
+// p {
+//   font-size: 16px;
+
+//   @include tablet {
+//     font-size: 18px;
+//   }
+
+//   @include desktop {
+//     font-size: 20px;
+//   }
+// }

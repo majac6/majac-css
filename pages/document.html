@@ -1,1 +1,284 @@
-hi
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png?v=47rm7gXavg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png?v=47rm7gXavg">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png?v=47rm7gXavg">
+  <link rel="manifest" href="../assets/favicons/manifest.json?v=47rm7gXavg">
+  <link rel="mask-icon" href="../assets/favicons/safari-pinned-tab.svg?v=47rm7gXavg" color="#5bbad5">
+  <link rel="shortcut icon" href="../assets/favicons/favicon.ico?v=47rm7gXavg">
+  <meta name="apple-mobile-web-app-title" content="MAJAC.co.kr">
+  <meta name="application-name" content="MAJAC.co.kr">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="../assets/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../assets/tether/dist/css/tether.min.css">
+  <!-- <link rel="stylesheet" href="build/majac.css"> -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+  <link rel="stylesheet" href="../style.css">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-primary">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="../index.html">MAJAC CSS</a>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="get_start.html">Get Start</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Document <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="padding-h-30">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-3 push-md-9 bd-sidebar hidden-sm-down">
+
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link">Typo</a>
+
+              <ul class="nav flex-column padding-left-25">
+                <li class="nav-item">
+                  <a class="nav-link" href="#Textsize">Textsize</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Textletter">Textletter</a>
+                </li>
+              </ul>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Layout</a>
+
+              <ul class="nav flex-column padding-left-25">
+                <li class="nav-item">
+                  <a class="nav-link" href="#Spacing">Spacing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Size">Size</a>
+                </li>
+              </ul>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">@Mixin</a>
+
+              <ul class="nav flex-column padding-left-25">
+                <li class="nav-item">
+                  <a class="nav-link" href="#Mobile_Responsive">Mobile Responsive</a>
+                </li>
+              </ul>
+
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-12 col-md-9 pull-md-3 bd-content">
+
+          <div class="row" id="typo">
+            <div id="Textsize" class="col-sm-12">
+              <h2>Textsize</h2>
+
+              <p>
+              텍스트크기를 지정할 때 사용합니다. 각 Element의 Class attr 에 직접 적용해 사용할 수 있고,
+              <code>&lt;div class="textsize-값"&gt;</code> 형태로 사용됩니다.
+              </p>
+
+              <ul>
+                <li>값 : xs, sm, md, lg, xg</li>
+                <li>기본값(14px)을 기준으로 각 값의 크기가 결정됩니다(rem)</li>
+                <li>이 기본값은 <code>~/majac-css/build/custom_scss/_var.scss</code> 파일에서 <code>$defaultFontSize</code>, <code>$defaultFontSize-Tablet</code>, <code>$defaultFontSize-Mobile</code> 값을 변경하면 적용됩니다.</li>
+              </ul>
+
+              <pre>
+                <code class="html">
+&lt;div class="textsize-xs"&gt;&lt;/div&gt;
+&lt;div class="textsize-sm"&gt;&lt;/div&gt;
+&lt;div class="textsize-md"&gt;&lt;/div&gt;
+&lt;div class="textsize-lg"&gt;&lt;/div&gt;
+&lt;div class="textsize-xg"&gt;&lt;/div&gt;
+                </code>
+              </pre>
+            </div>
+
+            <div class="col-sm-12">
+              <hr/>
+            </div>
+
+            <div id="Textletter" class="col-sm-12">
+              <h2>Textletter</h2>
+
+              <p>
+                일관적인 텍스트간격을 지정할 때 사용합니다. 각 Element의 Class attr 에 직접 적용해 사용할 수 있고,
+                <code>&lt;div class="textletter-값"&gt;</code> 형태로 사용됩니다.
+              </p>
+
+              <ul>
+                <li>값 : sm, md, lg</li>
+                <li>이 값은 <code>~/majac-css/build/custom_scss/_var.scss</code> 파일에서 <code>$letterspace</code> 값을 변경하면 적용됩니다.</li>
+              </ul>
+
+              <pre>
+                <code class="html">
+&lt;div class="textletter-sm"&gt;&lt;/div&gt;
+&lt;div class="textletter-md"&gt;&lt;/div&gt;
+&lt;div class="textletter-lg"&gt;&lt;/div&gt;
+                </code>
+              </pre>
+            </div>
+
+            <div class="col-sm-12">
+              <hr/>
+            </div>
+          </div>
+
+          <div class="row" id="Layout">
+
+            <div id="Spacing" class="col-sm-12">
+              <h2>Spacing</h2>
+
+              <p>
+              각 Element의 간격을 조절할 때 사용되는 Class입니다. 특정한 규칙을 적용해 원하는 간격을 설정할 수 있으며,
+              <code>&lt;div class="속성-적용범위-값"&gt;</code> 형태로 사용됩니다.
+              </p>
+
+              <ul>
+                <li>속성 : margin / padding</li>
+                <li>적용범위 : top / bottom / left / right / h(top&bottom) / w(left&right)</li>
+                <li>값 : 0 ~ 100, auto(속성 margin 일 때만 적용가능)</li>
+              </ul>
+
+              <pre>
+                <code class="html">
+&lt;div class="margin-top-50"&gt;&lt;/div&gt;
+&lt;div class="margin-bottom-50"&gt;&lt;/div&gt;
+&lt;div class="margin-left-50"&gt;&lt;/div&gt;
+&lt;div class="margin-right-50"&gt;&lt;/div&gt;
+&lt;div class="margin-h-50"&gt;&lt;/div&gt;
+&lt;div class="margin-w-50"&gt;&lt;/div&gt;
+&lt;div class="margin-w-auto"&gt;&lt;/div&gt;
+
+&lt;div class="padding-top-50"&gt;&lt;/div&gt;
+&lt;div class="padding-bottom-50"&gt;&lt;/div&gt;
+&lt;div class="padding-left-50"&gt;&lt;/div&gt;
+&lt;div class="padding-right-50"&gt;&lt;/div&gt;
+&lt;div class="padding-h-50"&gt;&lt;/div&gt;
+&lt;div class="padding-w-50"&gt;&lt;/div&gt;
+                </code>
+              </pre>
+            </div>
+
+            <div class="col-sm-12">
+              <hr/>
+            </div>
+
+            <div id="Size" class="col-sm-12">
+              <h2>Size</h2>
+
+              <p>
+              각 Element의 크기를 조절할 때 사용되는 Class입니다. 특정한 규칙을 적용해 원하는 크기를 설정할 수 있으며,
+              <code>&lt;div class="속성-값[옵션]"&gt;</code> 형태로 사용됩니다.
+              </p>
+
+              <ul>
+                <li>속성 : width / height</li>
+                <li>값 : 0 ~ 100</li>
+                <li>옵션(생략가능, 크기가 %으로 적용됨) : p</li>
+              </ul>
+
+              <pre>
+                <code class="html">
+&lt;div class="width-50"&gt;&lt;/div&gt;
+&lt;div class="width-100p"&gt;&lt;/div&gt;
+
+&lt;div class="height-50"&gt;&lt;/div&gt;
+&lt;div class="height-100p"&gt;&lt;/div&gt;
+                </code>
+              </pre>
+            </div>
+
+            <div class="col-sm-12">
+              <hr/>
+            </div>
+
+          </div>
+
+          <div class="row" id="Mixin">
+
+            <div class="col-sm-12" id="Mobile_Responsive">
+              <h2>Mobile Responsive</h2>
+
+              <p>
+              모바일 및 PC 반응성을 위해 다음과 같이 SCSS 문법을 작성할 수 있습니다.<br/>
+              CSS 클래스를 하나 생성하고 <code>@include pc {...}</code> 또는 <code>@include mobile {...}</code> 을 생성해 그 안에 원하는 스타일을 작성하면 됩니다.
+              </p>
+
+              <ul>
+                <li>기본값(768px)을 기준으로, 창 사이즈가 기준보다 크면 PC, 작으면 Mobile 로 간주합니다.</li>
+                <li>이 기본값은 <code>~/majac-css/build/custom_scss/_var.scss</code> 파일에서 <code>$pc-width</code> 값을 변경하면 적용됩니다.</li>
+              </ul>
+
+              <pre>
+                <code class="css">
+.body {
+  @include pc {
+    background-color: #FFF;
+  }
+  @include mobile {
+    background-color: red;
+  }
+}
+                </code>
+              </pre>
+            </div>
+
+            <div class="col-sm-12">
+              <hr/>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container">
+      <div class="row justify-content-md-center align-items-center">
+        <div class="col col-lg-auto text-center">
+          MIT License<br/>
+          Made by <a href="https://majac6.github.io/" target="_blank">MAJAC</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+<script src="../assets/jquery/dist/jquery.min.js"></script>
+<script src="../assets/tether/dist/js/tether.min.js"></script>
+<script src="../assets/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</html>

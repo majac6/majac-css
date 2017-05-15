@@ -3,10 +3,19 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png?v=47rm7gXavg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png?v=47rm7gXavg">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png?v=47rm7gXavg">
+  <link rel="manifest" href="assets/favicons/manifest.json?v=47rm7gXavg">
+  <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg?v=47rm7gXavg" color="#5bbad5">
+  <link rel="shortcut icon" href="assets/favicons/favicon.ico?v=47rm7gXavg">
+  <meta name="apple-mobile-web-app-title" content="MAJAC.co.kr">
+  <meta name="application-name" content="MAJAC.co.kr">
+  <meta name="theme-color" content="#ffffff">
 
-  <link rel="stylesheet" href="asset/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="asset/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="asset/tether/dist/css/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/tether/dist/css/tether.min.css">
   <!-- <link rel="stylesheet" href="build/majac.css"> -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -21,14 +30,14 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index.html">Home</a>
         </li>
-<!--         <li class="nav-item">
+        <li class="nav-item">
           <a class="nav-link" href="pages/get_start.html">Get Start</a>
-        </li> -->
-<!--         <li class="nav-item">
-          <a class="nav-link" href="#">Document</a>
-        </li> -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pages/document.html">Document</a>
+        </li>
 <!--         <li class="nav-item">
           <a class="nav-link" href="#">Link</a>
         </li>
@@ -68,9 +77,9 @@
           <li><b>Just import</b> your Project</li>
           <li>Enjoy</li>
         </ul>
-        <p class="text-center">
+<!--         <p class="text-center">
           <button type="button" class="btn btn-outline-primary">More <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
-        </p>
+        </p> -->
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <div class="text-center">
@@ -82,9 +91,7 @@
           <li>Good for during development</li>
           <li>Supported <b>cross browser</b></li>
         </ul>
-<!--           <p class="text-center">
-          <button type="button" class="btn btn-outline-primary">More <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
-        </p> -->
+
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <div class="text-center">
@@ -92,61 +99,14 @@
         </div>
         <h2 class="text-center margin-h-40">CSS/SASS</h2>
         <ul class="textsize-lg textletter-sm">
-          <li>Recommended use <a href="http://sass-lang.com/" target="_blank"><b>SASS</b></a></li>
+          <li><a href="http://sass-lang.com/" target="_blank"><b>SASS</b></a> is Recommended</li>
           <li>Has many <b>@include Classes</b> For SASS</li>
           <li>Can make clear <b>CSS code</b></li>
         </ul>
-<!--           <p class="text-center">
-          <button type="button" class="btn btn-outline-primary">More <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
-        </p> -->
+
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 
-
-    <!-- START THE FEATURETTES -->
-
-<!--      <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-      <div class="col-md-5">
-        <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22500%22%20height%3D%22500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20500%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ab1aa899b%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A25pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ab1aa899b%22%3E%3Crect%20width%3D%22500%22%20height%3D%22500%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22185.125%22%20y%3D%22261.1%22%3E500x500%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 500px; height: 500px;">
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7 push-md-5">
-        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-      <div class="col-md-5 pull-md-7">
-        <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22500%22%20height%3D%22500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20500%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ab1aa89a0%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A25pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ab1aa89a0%22%3E%3Crect%20width%3D%22500%22%20height%3D%22500%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22185.125%22%20y%3D%22261.1%22%3E500x500%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 500px; height: 500px;">
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-      <div class="col-md-5">
-        <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22500%22%20height%3D%22500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20500%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ab1aa89a3%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A25pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ab1aa89a3%22%3E%3Crect%20width%3D%22500%22%20height%3D%22500%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22185.125%22%20y%3D%22261.1%22%3E500x500%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 500px; height: 500px;">
-      </div>
-    </div>
-
-    <hr class="featurette-divider"> -->
-
-    <!-- /END THE FEATURETTES -->
-
-
-    <!-- FOOTER -->
 
   </div><!-- /.container -->
 
@@ -163,7 +123,7 @@
 
 </body>
 
-<script src="asset/jquery/dist/jquery.min.js"></script>
-<script src="asset/tether/dist/js/tether.min.js"></script>
-<script src="asset/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="assets/jquery/dist/jquery.min.js"></script>
+<script src="assets/tether/dist/js/tether.min.js"></script>
+<script src="assets/bootstrap/dist/js/bootstrap.min.js"></script>
 </html>

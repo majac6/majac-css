@@ -233,6 +233,15 @@
     display: -webkit-flex;
     display: flex;
   }
+  &-block {
+    display: block;
+  }
+  &-table {
+    display: table;
+  }
+  &-inlineBlock {
+    display: inline-block;
+  }
 }
 
 .flex {
@@ -244,18 +253,30 @@
   }
 }
 
-
 .bg {
   &-overlay {
-      position: relative;
-      &:before {
-          content: ' ';
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          background-color: rgba(0,0,0,0.25);
-          top: 0;
-          left: 0;
-      }
+    position: relative;
+    &:before {
+      content: ' ';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: rgba(0,0,0,0.25);
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.container {
+  &-table {
+    display: table;
+    width: 100%;
+  }
+  &-tableCell {
+    display: table-cell;
+    &.middle {
+      vertical-align: middle;
+    }
   }
 }
