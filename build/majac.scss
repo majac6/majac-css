@@ -5,8 +5,10 @@
 @import 'source/var';
 @import 'source/mixin';
 
+@import 'source/icons';
 @import 'source/layout';
 @import 'source/typo';
+
 
 html {
   font-size: $defaultFontSize;

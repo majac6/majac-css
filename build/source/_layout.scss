@@ -14,16 +14,21 @@
   }
 
   .maxWidth-#{$i}p {
-    max-width: percentage($i * 0.01);
+    max-width: percentage($i * 0.01) !important;
   }
   .maxHeight-#{$i}p {
-    max-height: percentage($i * 0.01);
+    max-height: percentage($i * 0.01) !important;
   }
   .width-#{$i}p {
-    width: percentage($i * 0.01);
+    width: percentage($i * 0.01) !important;
   }
   .height-#{$i}p {
-    height: percentage($i * 0.01);
+    height: percentage($i * 0.01) !important;
+  }
+
+  .size-#{$i} {
+    width: #{$i}px !important;
+    height: #{$i}px !important;
   }
 
   .padding-top-#{$i} {
@@ -278,5 +283,14 @@
     &.middle {
       vertical-align: middle;
     }
+  }
+}
+
+.float {
+  &-left {
+    float: left;
+  }
+  &-right {
+    float: right;
   }
 }
