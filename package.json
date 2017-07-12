@@ -1,6 +1,6 @@
 {
-  "name": "majac-css",
-  "version": "1.0.9",
+  "name": "@majac/css",
+  "version": "1.0.1",
   "description": "CSS For fast build WEB",
   "main": "build/majac.scss",
   "scripts": {

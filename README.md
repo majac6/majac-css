@@ -1,11 +1,11 @@
-# majac-css
+# @majac/css
 
 빠른 HTML 마크업을 위한 CSS/SCSS 파일입니다.
 SCSS 파일을 활용했을 때 최대한 기능을 활용할 수 있도록 제작 되었습니다.
 
 <h1>다운로드 및 필수사항 - How to get And Requirements</h1>
 <p>
-  - NPM : npm install majac-css<br/>
+  - NPM : npm install @majac/css<br/>
   - Git : https://github.com/majac6/majac-css<br/>
 </p>
 <!-- 
