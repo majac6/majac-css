@@ -2,10 +2,10 @@
 
 @import './mixin';
 
-$imgSRC: 'imgs/';
+$imgSRC: 'https://majac6.github.io/majac-css/build/imgs/';
 
 $osIconList: (
-  'beOS': $imgSRC + 'os/beOS.png',
+  'beos': $imgSRC + 'os/beOS.png',
   'centos': $imgSRC + 'os/centos.png',
   'debian': $imgSRC + 'os/debian.png',
   'fedora': $imgSRC + 'os/fedora.png',
@@ -17,6 +17,7 @@ $osIconList: (
   'symbian': $imgSRC + 'os/symbian.png',
   'ubuntu': $imgSRC + 'os/ubuntu.png',
   'unix': $imgSRC + 'os/unix.png',
+  'linux': $imgSRC + 'os/linux.png',
   'windows': $imgSRC + 'os/windows.png',
 );
 
