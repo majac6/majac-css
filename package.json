@@ -1,10 +1,10 @@
 {
   "name": "@majac/css",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CSS For fast build WEB",
   "main": "build/majac.scss",
   "scripts": {
-    "start": "watch-http-server -a localhost -p 8088 -c-1"
+    "start": ""
   },
   "repository": {
     "type": "git",
@@ -14,7 +14,8 @@
     "majac",
     "css",
     "css3",
-    "scss"
+    "scss",
+    "sass"
   ],
   "author": "majac",
   "license": "MIT",
@@ -22,9 +23,5 @@
     "url": "https://github.com/majac6/majac-css/issues"
   },
   "homepage": "https://majac6.github.io/majac-css/",
-  "devDependencies": {
-    "bootstrap": "^4.0.0-alpha.6",
-    "font-awesome": "^4.7.0",
-    "jquery": "^3.1.1"
-  }
+  "devDependencies": {}
 }

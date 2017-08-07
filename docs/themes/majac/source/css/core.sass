@@ -1,0 +1,50 @@
+@charset "utf-8"
+
+@import ../lib/majac-css/majac.scss
+
+body
+  padding-top: 47px
+
+  .jumbotron
+    background-image: url(images/banner.jpg)
+
+    +bg-set(cover, center)
+
+    min-height: 400px
+    color: map-get($colors, "white")
+ 
+    h1
+      +text-shadow(4px 4px 8px rgba(0, 0, 0, 1))
+
+footer
+  background-color: map-get($colors, "primary")
+  color: map-get($colors, "white")
+  margin-top: 100px
+
+  .container
+    .row
+      min-height: 100px
+
+.linkActions
+  color: map-get($colors, "link")
+  text-decoration: none
+
+a
+  color: map-get($colors, "link")
+
+  &:focus
+    @extend .linkActions
+
+  &:hover
+    @extend .linkActions
+
+  &:visited
+    @extend .linkActions
+
+  &:active
+    @extend .linkActions
+
+h2
+  margin-top: 50px
+  margin-bottom: 20px
+ 
