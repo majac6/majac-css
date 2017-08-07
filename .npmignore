@@ -1,7 +1,5 @@
 .DS_Store
 npm-debug.log
-pages/*
-index.html
 img/*
 assets/*
 src/*
