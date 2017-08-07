@@ -1,0 +1,20 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><link rel="icon" href="/favicon.png"><title>responsive</title><link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css"><link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css"><link rel="stylesheet" href="/lib/majac-css/majac.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css"><link rel="stylesheet" href="/css/core.min.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script><script src="/lib/jquery/jquery.min.js"></script><script src="/lib/tether/js/tether.min.js"></script><script src="/lib/bootstrap/js/bootstrap.min.js"></script><script src="/js/script.js"></script></head><body><nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-primary"><button type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><span class="navbar-toggler-icon"></span></button><a href="../index.html" class="navbar-brand">MAJAC CSS</a><div id="navbarCollapse" class="collapse navbar-collapse"><ul class="navbar-nav mr-auto"><li class="nav-item"><a href="/" class="nav-link ">home</a></li><li class="nav-item"><a href="/install" class="nav-link ">install</a></li><li class="nav-item"><a href="/documents" class="nav-link ">documents</a></li></ul></div></nav><article id="article" class="article"><h1>responsive </h1><hr><div class="article__contents"><p>모바일 및 PC 반응성을 위해 다음과 같이 SCSS 문법을 작성할 수 있습니다.<br>CSS 클래스를 하나 생성하고 <code>@include pc {...}</code> 또는 <code>@include mobile {...}</code> 을 생성해 그 안에 원하는 스타일을 작성하면 됩니다.</p>
+<ul>
+<li>기본값(768px)을 기준으로, 창 사이즈가 기준보다 크면 PC, 작으면 Mobile 로 간주합니다.</li>
+<li>이 기본값은 <code>~/@majac/css/build/custom_scss/_var.scss</code> 파일에서 <code>$pc-width</code> 값을 변경하면 적용됩니다.</li>
+</ul>
+<pre>
+<code class="css">
+.body {
+
+  @include pc {
+    background-color: #FFF;
+  }
+
+  @include mobile {
+    background-color: red;
+  }
+
+}
+</code>
+</pre></div></article><footer><div class="container"><div class="row justify-content-md-center align-items-center"><div class="col col-lg-auto text-center">MIT License <br/> Made by <a href="https://majac6.github.io/" target="_blank">MAJAC</a></div></div></div></footer></body></html>
