@@ -22,21 +22,7 @@
 &lt;div class="padding-w-50"&gt;&lt;/div&gt;
   </code>
 </pre>
-</div><hr class="margin-bottom-25"><h3 class="margin-bottom-20">Textsize</h3><div class="content"><ul>
-<li>값 : xs, sm, md, lg, xg</li>
-<li>기본값(14px)을 기준으로 각 값의 크기가 결정됩니다(rem)</li>
-<li>이 기본값은 <code>~/@majac/css/build/custom_scss/_var.scss</code> 파일에서 <code>$defaultFontSize</code>, <code>$defaultFontSize-Tablet</code>, <code>$defaultFontSize-Mobile</code> 값을 변경하면 적용됩니다.</li>
-</ul>
-<p>텍스트크기를 지정할 때 사용합니다. 각 Element의 Class attr 에 직접 적용해 사용할 수 있고,<br><code>&lt;div class=&quot;textsize-값&quot;&gt;</code> 형태로 사용됩니다.</p>
-<pre>
-  <code class="html">
-&lt;div class="textsize-xs"&gt;&lt;/div&gt;
-&lt;div class="textsize-sm"&gt;&lt;/div&gt;
-&lt;div class="textsize-md"&gt;&lt;/div&gt;
-&lt;div class="textsize-lg"&gt;&lt;/div&gt;
-&lt;div class="textsize-xg"&gt;&lt;/div&gt;
-  </code>
-</pre></div><hr class="margin-bottom-25"><h3 class="margin-bottom-20">responsive</h3><div class="content"><p>모바일 및 PC 반응성을 위해 다음과 같이 SCSS 문법을 작성할 수 있습니다.<br>CSS 클래스를 하나 생성하고 <code>@include pc {...}</code> 또는 <code>@include mobile {...}</code> 을 생성해 그 안에 원하는 스타일을 작성하면 됩니다.</p>
+</div><hr class="margin-bottom-25"><h3 class="margin-bottom-20">responsive</h3><div class="content"><p>모바일 및 PC 반응성을 위해 다음과 같이 SCSS 문법을 작성할 수 있습니다.<br>CSS 클래스를 하나 생성하고 <code>@include pc {...}</code> 또는 <code>@include mobile {...}</code> 을 생성해 그 안에 원하는 스타일을 작성하면 됩니다.</p>
 <ul>
 <li>기본값(768px)을 기준으로, 창 사이즈가 기준보다 크면 PC, 작으면 Mobile 로 간주합니다.</li>
 <li>이 기본값은 <code>~/@majac/css/build/custom_scss/_var.scss</code> 파일에서 <code>$pc-width</code> 값을 변경하면 적용됩니다.</li>
@@ -55,17 +41,6 @@
 
 }
 </code>
-</pre></div><hr class="margin-bottom-25"><h3 class="margin-bottom-20">textletter</h3><div class="content"><p>일관적인 텍스트간격을 지정할 때 사용합니다. 각 Element의 Class attr 에 직접 적용해 사용할 수 있고,<br><code>&lt;div class=&quot;textletter-값&quot;&gt;</code>형태로 사용됩니다.</p>
-<ul>
-<li>값 : sm, md, lg</li>
-<li>이 값은 <em>~/@majac/css/build/custom_scss/_var.scss</em> 파일에서 <code>$letterspace</code> 값을 변경하면 적용됩니다.</li>
-</ul>
-<pre>
-  <code class="html">
-&lt;div class="textletter-sm"&gt;&lt;/div&gt;
-&lt;div class="textletter-md"&gt;&lt;/div&gt;
-&lt;div class="textletter-lg"&gt;&lt;/div&gt;
-  </code>
 </pre></div><hr class="margin-bottom-25"><h3 class="margin-bottom-20">size</h3><div class="content"><p>각 Element의 크기를 조절할 때 사용되는 Class입니다. 특정한 규칙을 적용해 원하는 크기를 설정할 수 있으며,<br><code>&amp;lt;div class=&quot;속성-값[옵션]&quot;&amp;gt;</code> 형태로 사용됩니다.</p>
 <ul>
 <li>속성 : width / height</li>
@@ -79,5 +54,30 @@
 
 &lt;div class="height-50"&gt;&lt;/div&gt;
 &lt;div class="height-100p"&gt;&lt;/div&gt;
+  </code>
+</pre></div><hr class="margin-bottom-25"><h3 class="margin-bottom-20">Textsize</h3><div class="content"><ul>
+<li>값 : xs, sm, md, lg, xg</li>
+<li>기본값(14px)을 기준으로 각 값의 크기가 결정됩니다(rem)</li>
+<li>이 기본값은 <code>~/@majac/css/build/custom_scss/_var.scss</code> 파일에서 <code>$defaultFontSize</code>, <code>$defaultFontSize-Tablet</code>, <code>$defaultFontSize-Mobile</code> 값을 변경하면 적용됩니다.</li>
+</ul>
+<p>텍스트크기를 지정할 때 사용합니다. 각 Element의 Class attr 에 직접 적용해 사용할 수 있고,<br><code>&lt;div class=&quot;textsize-값&quot;&gt;</code> 형태로 사용됩니다.</p>
+<pre>
+  <code class="html">
+&lt;div class="textsize-xs"&gt;&lt;/div&gt;
+&lt;div class="textsize-sm"&gt;&lt;/div&gt;
+&lt;div class="textsize-md"&gt;&lt;/div&gt;
+&lt;div class="textsize-lg"&gt;&lt;/div&gt;
+&lt;div class="textsize-xg"&gt;&lt;/div&gt;
+  </code>
+</pre></div><hr class="margin-bottom-25"><h3 class="margin-bottom-20">textletter</h3><div class="content"><p>일관적인 텍스트간격을 지정할 때 사용합니다. 각 Element의 Class attr 에 직접 적용해 사용할 수 있고,<br><code>&lt;div class=&quot;textletter-값&quot;&gt;</code>형태로 사용됩니다.</p>
+<ul>
+<li>값 : sm, md, lg</li>
+<li>이 값은 <em>~/@majac/css/build/custom_scss/_var.scss</em> 파일에서 <code>$letterspace</code> 값을 변경하면 적용됩니다.</li>
+</ul>
+<pre>
+  <code class="html">
+&lt;div class="textletter-sm"&gt;&lt;/div&gt;
+&lt;div class="textletter-md"&gt;&lt;/div&gt;
+&lt;div class="textletter-lg"&gt;&lt;/div&gt;
   </code>
 </pre></div><hr class="margin-bottom-25"></div><div><div class="pagination"></div></div></article></div><div class="col-md-3"><h3 class="widgets__item__heading margin-top-50">Categories</h3><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/majac-css/categories/Layout/">Layout</a></li><li class="category-list-item"><a class="category-list-link" href="/majac-css/categories/Typo/">Typo</a></li></ul></div></div></div></section><footer><div class="container"><div class="row justify-content-md-center align-items-center"><div class="col col-lg-auto text-center">MIT License <br/> Made by <a href="https://majac6.github.io/" target="_blank">MAJAC</a></div></div></div></footer></body></html>
