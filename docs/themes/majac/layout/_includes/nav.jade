@@ -1,3 +1,5 @@
+
+
 nav.navbar.navbar-toggleable-md.navbar-inverse.fixed-top.bg-primary
 
   button(
@@ -15,13 +17,15 @@ nav.navbar.navbar-toggleable-md.navbar-inverse.fixed-top.bg-primary
   div#navbarCollapse.collapse.navbar-collapse
 
     ul.navbar-nav.mr-auto
+      - var current_path = document.URL;
       each item,i in theme.menu
-        - var active_class = '';
-        - if(path.split('/')[0] == i) { active_class = 'active'; item = '' }
-        - if(path.split('/')[0] == 'index.html' && i == 'home') active_class = 'active';
+        - console.log(item);
+        - var active_class = ''; var path = '';
+        - if(current_path.indexOf(i) > -1) active_class = 'active';
+        - if(i == 'home') active_class = 'active';
 
         li.nav-item
           a(
             class="nav-link #{active_class}"
-            href="#{config.root}#{item}"
+            href="#{config.root}#{path}"
           ) #{i}
