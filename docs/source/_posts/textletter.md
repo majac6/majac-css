@@ -1,5 +1,5 @@
 ---
-title: textletter
+title: text letter
 date: 2017-08-07 16:19:52
 categories: Typo
 ---
@@ -10,6 +10,12 @@ categories: Typo
 - 값 : sm, md, lg
 - 이 값은 *~/@majac/css/build/custom_scss/_var.scss* 파일에서 `$letterspace` 값을 변경하면 적용됩니다.
 
+#### Preview
+<div class="preview-box">
+  <div class="textletter-sm">textleeter-sm</div>
+  <div class="textletter-md">textleeter-md</div>
+  <div class="textletter-lg">textleeter-lg</div>
+</div>
 
 <pre>
   <code class="html">

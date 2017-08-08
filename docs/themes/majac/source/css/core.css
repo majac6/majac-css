@@ -20604,7 +20604,30 @@ a {
   color: #5b88b1;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  text-transform: capitalize;
+}
+
 h2 {
   margin-top: 50px;
   margin-bottom: 20px;
+}
+
+h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+h4 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.preview-box {
+  border: 1px solid #CCC;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  padding: 20px 40px;
 }
