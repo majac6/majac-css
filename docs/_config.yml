@@ -79,7 +79,7 @@ theme: majac
 deploy: 
   type: git
   repo: https://github.com/majac6/majac-css
-  branch: gh_page
+  branch: gh-pages
   message: update docs
 # Liverload
 ## https://github.com/hexojs/hexo-livereload
