@@ -12,20 +12,19 @@ nav.navbar.navbar-toggleable-md.navbar-inverse.fixed-top.bg-primary
   ).navbar-toggler.navbar-toggler-right
     span.navbar-toggler-icon
 
-  a(href="#{config.root}index.html").navbar-brand MAJAC CSS
+  a(href="#{config.root}").navbar-brand MAJAC CSS
 
   div#navbarCollapse.collapse.navbar-collapse
 
     ul.navbar-nav.mr-auto
-      - var current_path = document.URL;
       each item,i in theme.menu
-        - console.log(item);
-        - var active_class = ''; var path = '';
-        - if(current_path.indexOf(i) > -1) active_class = 'active';
-        - if(i == 'home') active_class = 'active';
+        - var active_class = '';
+        - var href = item;
+        - if(path.indexOf(i) > -1) { active_class = 'active' };
+        - if(path == 'index.html' && i == 'home') { active_class = 'active'; href = ''; }
 
         li.nav-item
           a(
             class="nav-link #{active_class}"
-            href="#{config.root}#{path}"
+            href="#{config.root}#{href}"
           ) #{i}
