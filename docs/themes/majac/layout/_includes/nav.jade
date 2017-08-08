@@ -10,18 +10,18 @@ nav.navbar.navbar-toggleable-md.navbar-inverse.fixed-top.bg-primary
   ).navbar-toggler.navbar-toggler-right
     span.navbar-toggler-icon
 
-  a(href="../index.html").navbar-brand MAJAC CSS
+  a(href="#{config.root}index.html").navbar-brand MAJAC CSS
 
   div#navbarCollapse.collapse.navbar-collapse
 
     ul.navbar-nav.mr-auto
       each item,i in theme.menu
         - var active_class = '';
-        - if(path.split('/')[0] == i) active_class = 'active';
+        - if(path.split('/')[0] == i) { active_class = 'active'; item = '' }
         - if(path.split('/')[0] == 'index.html' && i == 'home') active_class = 'active';
 
         li.nav-item
           a(
             class="nav-link #{active_class}"
-            href="#{item}"
+            href="#{config.root}#{item}"
           ) #{i}
