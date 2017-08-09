@@ -4,5 +4,5 @@ img/*
 src/*
 doc/*
 test/*
-
+node_modules/
 .vscode/

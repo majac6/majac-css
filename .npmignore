@@ -1,9 +1,8 @@
 .*
 npm-debug.log
 img/*
-assets/*
 src/*
 doc/*
 test/*
-
+node_modules/
 .vscode/
