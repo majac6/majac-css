@@ -5,3 +5,5 @@ assets/*
 src/*
 doc/*
 test/*
+
+.vscode/

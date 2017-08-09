@@ -4,3 +4,5 @@ img/*
 src/*
 doc/*
 test/*
+
+.vscode/
