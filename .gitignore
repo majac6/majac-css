@@ -1,8 +1,11 @@
-.*
+# npm
 npm-debug.log
-img/*
-src/*
-doc/*
-test/*
 node_modules/
+
+
+# Editer Config Files
 .vscode/
+
+# System Files
+.DS_Store
+Thumbs.db
