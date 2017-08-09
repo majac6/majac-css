@@ -14,10 +14,10 @@ categories: Layout
 
 <pre>
   <code class="html">
-&lt;div class="width-50"&gt;&lt;/div&gt;
-&lt;div class="width-100p"&gt;&lt;/div&gt;
+    &lt;div class="width-50"&gt;&lt;/div&gt;
+    &lt;div class="width-100p"&gt;&lt;/div&gt;
 
-&lt;div class="height-50"&gt;&lt;/div&gt;
-&lt;div class="height-100p"&gt;&lt;/div&gt;
+    &lt;div class="height-50"&gt;&lt;/div&gt;
+    &lt;div class="height-100p"&gt;&lt;/div&gt;
   </code>
 </pre>

@@ -24,10 +24,10 @@ categories: Typo
 
 <pre>
   <code class="html">
-&lt;div class="textsize-xs"&gt;&lt;/div&gt;
-&lt;div class="textsize-sm"&gt;&lt;/div&gt;
-&lt;div class="textsize-md"&gt;&lt;/div&gt;
-&lt;div class="textsize-lg"&gt;&lt;/div&gt;
-&lt;div class="textsize-xg"&gt;&lt;/div&gt;
+    &lt;div class="textsize-xs"&gt;&lt;/div&gt;
+    &lt;div class="textsize-sm"&gt;&lt;/div&gt;
+    &lt;div class="textsize-md"&gt;&lt;/div&gt;
+    &lt;div class="textsize-lg"&gt;&lt;/div&gt;
+    &lt;div class="textsize-xg"&gt;&lt;/div&gt;
   </code>
 </pre>

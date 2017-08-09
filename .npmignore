@@ -1,6 +1,7 @@
-.DS_Store
+.*
 npm-debug.log
 img/*
 assets/*
 src/*
 doc/*
+test/*

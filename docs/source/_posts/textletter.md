@@ -19,8 +19,8 @@ categories: Typo
 
 <pre>
   <code class="html">
-&lt;div class="textletter-sm"&gt;&lt;/div&gt;
-&lt;div class="textletter-md"&gt;&lt;/div&gt;
-&lt;div class="textletter-lg"&gt;&lt;/div&gt;
+    &lt;div class="textletter-sm"&gt;&lt;/div&gt;
+    &lt;div class="textletter-md"&gt;&lt;/div&gt;
+    &lt;div class="textletter-lg"&gt;&lt;/div&gt;
   </code>
 </pre>
