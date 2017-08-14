@@ -4,7 +4,7 @@
   "description": "CSS For fast build WEB",
   "main": "build/majac.scss",
   "scripts": {
-    "start": "node_modules/.bin/pug-server test -p 3000"
+    "start": "node_modules/pug-server/bin/pug-server test -p 3000"
   },
   "repository": {
     "type": "git",
