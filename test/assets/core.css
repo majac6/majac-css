@@ -20567,6 +20567,7 @@ html {
 
 .majac-table {
   width: 100%;
+  position: relative;
 }
 
 .majac-table thead {
@@ -20575,7 +20576,8 @@ html {
 
 .majac-table thead:before {
   content: ' ';
-  border: 1px solid #000;
+  height: 1px;
+  background-color: #000;
   position: absolute;
   top: 49px;
   left: -0.5%;
@@ -20606,11 +20608,12 @@ html {
 
 .majac-table tbody:before {
   content: ' ';
-  border: 1px solid #000;
+  height: 1px;
+  background-color: #000;
   position: absolute;
   bottom: 0px;
-  left: -1%;
-  width: calc(100% + 2%);
+  left: -0.5%;
+  width: calc(100% + 1%);
 }
 
 .majac-table tbody tr {

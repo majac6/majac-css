@@ -7,7 +7,9 @@
 
 @import 'source/layout';
 @import 'source/typo';
-
+ 
+@import 'elements/majac-table';
+ 
 html {
   font-size: $defaultFontSize;
   // set Default Font size
