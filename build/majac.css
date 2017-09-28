@@ -20554,6 +20554,14 @@ strong {
   position: relative;
 }
 
+.majac-table.center thead th {
+  text-align: center;
+}
+
+.majac-table.center tbody td {
+  text-align: center;
+}
+
 .majac-table thead {
   position: relative;
 }

@@ -2,6 +2,15 @@
   width: 100%;
   position: relative;
 
+  &.center {
+    thead th {
+      text-align: center;
+    }
+    tbody td {
+      text-align: center;
+    }
+  }
+
   thead {
     position: relative;
     &:before {
